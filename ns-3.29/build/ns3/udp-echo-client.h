@@ -182,6 +182,9 @@ private:
   /// Callbacks for tracing the packet Rx events, includes source and destination addresses
   TracedCallback<Ptr<const Packet>, const Address &, const Address &> m_rxTraceWithAddresses;
 
+  //new
+  double sentTime;
+
 };
 
 } // namespace ns3

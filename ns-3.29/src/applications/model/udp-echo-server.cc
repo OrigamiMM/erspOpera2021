@@ -49,12 +49,12 @@ UdpEchoServer::GetTypeId (void)
                    UintegerValue (9),
                    MakeUintegerAccessor (&UdpEchoServer::m_port),
                    MakeUintegerChecker<uint16_t> ())
-    .AddTraceSource ("Rx", "A packet has been received",
+    /* original: .AddTraceSource ("Rx", "A packet has been received",
                      MakeTraceSourceAccessor (&UdpEchoServer::m_rxTrace),
                      "ns3::Packet::TracedCallback")
     .AddTraceSource ("RxWithAddresses", "A packet has been received",
                      MakeTraceSourceAccessor (&UdpEchoServer::m_rxTraceWithAddresses),
-                     "ns3::Packet::TwoAddressTracedCallback")
+                     "ns3::Packet::TwoAddressTracedCallback") */
   ;
   return tid;
 }
@@ -159,12 +159,12 @@ UdpEchoServer::HandleRead (Ptr<Socket> socket)
 
   Ptr<Packet> packet;
   Address from;
-  Address localAddress;
+  // original Address localAddress;
   while ((packet = socket->RecvFrom (from)))
     {
-      socket->GetSockName (localAddress);
-      m_rxTrace (packet);
-      m_rxTraceWithAddresses (packet, from, localAddress);
+      // original socket->GetSockName (localAddress);
+      // original m_rxTrace (packet);
+      // original m_rxTraceWithAddresses (packet, from, localAddress);
       if (InetSocketAddress::IsMatchingType (from))
         {
           NS_LOG_INFO ("At time " << Simulator::Now ().GetSeconds () << "s server received " << packet->GetSize () << " bytes from " <<
@@ -178,8 +178,8 @@ UdpEchoServer::HandleRead (Ptr<Socket> socket)
                        Inet6SocketAddress::ConvertFrom (from).GetPort ());
         }
 
-      packet->RemoveAllPacketTags ();
-      packet->RemoveAllByteTags ();
+      // original packet->RemoveAllPacketTags ();
+      // original packet->RemoveAllByteTags ();
 
       NS_LOG_LOGIC ("Echoing packet");
       socket->SendTo (packet, 0, from);

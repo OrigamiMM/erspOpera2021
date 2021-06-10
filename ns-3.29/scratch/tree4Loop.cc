@@ -1,3 +1,5 @@
+// fat tree with random servers and clients assigned
+
 //K=4 fat tree                   
 /*                                   Network Topology of k=4 fat tree                    
 *                    c0               c1               c2               c3                           Core
@@ -39,6 +41,14 @@ using namespace std;
 NS_LOG_COMPONENT_DEFINE ("TreeExample");
 
 int main(int argc, char *argv[]){
+
+    //PYVIZ code 
+    CommandLine cmd;
+    cmd.Parse (argc, argv);
+
+    //ECMP added
+    Config::SetDefault ("ns3::Ipv4GlobalRouting::RandomEcmpRouting", BooleanValue (true));
+
     
     LogComponentEnable("UdpEchoClientApplication", LOG_LEVEL_INFO);
     LogComponentEnable("UdpEchoServerApplication", LOG_LEVEL_INFO);
@@ -177,17 +187,28 @@ int main(int argc, char *argv[]){
         addressArray[index] = address.Assign(channel);
         index++;
     }
-    
-    
+
     Ipv4GlobalRoutingHelper::PopulateRoutingTables();
 
+
+    //p0 p1  p2  p3         p4 p5  p6  p7         p8 p9 p10 p11        p12 p13 p14 p15  
+       
+    //px px  px  px         px px  px  px         p8 p9 pxx pxx        p12 pxx pxx pxx  
+
+
+    //p0p15     p1p11   p2p7    p3p0    p4p14   p5p10   p6p13   p8p12   p9p10  
+
+    
+    //Connecting...
+    
+    //p0p15 
     UdpEchoServerHelper server (9);
     ApplicationContainer apps = server.Install (p.Get (0));
     apps.Start (Seconds (1.0));
     apps.Stop (Seconds (10.0));
 
     UdpEchoClientHelper client (addressArray[0].GetAddress (0), 9);
-    client.SetAttribute ("MaxPackets", UintegerValue (10));
+    client.SetAttribute ("MaxPackets", UintegerValue (1));
     client.SetAttribute ("Interval", TimeValue (Seconds (1.0)));
     client.SetAttribute ("PacketSize", UintegerValue (1024));
 
@@ -195,6 +216,128 @@ int main(int argc, char *argv[]){
     apps.Start (Seconds (2.0));
     apps.Stop (Seconds (10.0));
 
+    //p1p11
+    UdpEchoServerHelper server10 (10);
+    ApplicationContainer apps10 = server10.Install (p.Get (1));
+    apps10.Start (Seconds (1.0));
+    apps10.Stop (Seconds (10.0));
+
+    UdpEchoClientHelper client10 (addressArray[1].GetAddress (0), 10);
+    client10.SetAttribute ("MaxPackets", UintegerValue (1));
+    client10.SetAttribute ("Interval", TimeValue (Seconds (1.0)));
+    client10.SetAttribute ("PacketSize", UintegerValue (1024));
+
+    apps10 = client10.Install (NodeContainer (p.Get (11)));
+    apps10.Start (Seconds (2.0));
+    apps10.Stop (Seconds (10.0));
+
+    //p2p7
+    UdpEchoServerHelper server11 (11);
+    ApplicationContainer apps11 = server11.Install (p.Get (2));
+    apps11.Start (Seconds (1.0));
+    apps11.Stop (Seconds (10.0));
+
+    UdpEchoClientHelper client11 (addressArray[2].GetAddress (0), 11);
+    client11.SetAttribute ("MaxPackets", UintegerValue (1));
+    client11.SetAttribute ("Interval", TimeValue (Seconds (1.0)));
+    client11.SetAttribute ("PacketSize", UintegerValue (1024));
+
+    apps11 = client11.Install (NodeContainer (p.Get (7)));
+    apps11.Start (Seconds (2.0));
+    apps11.Stop (Seconds (10.0));
+
+
+    //p3p0
+    UdpEchoServerHelper server12 (12);
+    ApplicationContainer apps12 = server12.Install (p.Get (3));
+    apps12.Start (Seconds (1.0));
+    apps12.Stop (Seconds (10.0));
+
+    UdpEchoClientHelper client12 (addressArray[3].GetAddress (0), 12);
+    client12.SetAttribute ("MaxPackets", UintegerValue (1));
+    client12.SetAttribute ("Interval", TimeValue (Seconds (1.0)));
+    client12.SetAttribute ("PacketSize", UintegerValue (1024));
+
+    apps12 = client12.Install (NodeContainer (p.Get (0)));
+    apps12.Start (Seconds (2.0));
+    apps12.Stop (Seconds (10.0));
+    
+
+    //p4p14
+    UdpEchoServerHelper server13 (13);
+    ApplicationContainer apps13 = server13.Install (p.Get (4));
+    apps13.Start (Seconds (1.0));
+    apps13.Stop (Seconds (10.0));
+
+    UdpEchoClientHelper client13 (addressArray[4].GetAddress (0), 13);
+    client13.SetAttribute ("MaxPackets", UintegerValue (1));
+    client13.SetAttribute ("Interval", TimeValue (Seconds (1.0)));
+    client13.SetAttribute ("PacketSize", UintegerValue (1024));
+
+    apps13 = client13.Install (NodeContainer (p.Get (14)));
+    apps13.Start (Seconds (2.0));
+    apps13.Stop (Seconds (10.0));
+
+    //p5p10
+    UdpEchoServerHelper server14 (14);
+    ApplicationContainer apps14 = server14.Install (p.Get (5));
+    apps14.Start (Seconds (1.0));
+    apps14.Stop (Seconds (10.0));
+
+    UdpEchoClientHelper client14 (addressArray[5].GetAddress (0), 14);
+    client14.SetAttribute ("MaxPackets", UintegerValue (1));
+    client14.SetAttribute ("Interval", TimeValue (Seconds (1.0)));
+    client14.SetAttribute ("PacketSize", UintegerValue (1024));
+
+    apps14 = client14.Install (NodeContainer (p.Get (10)));
+    apps14.Start (Seconds (2.0));
+    apps14.Stop (Seconds (10.0));
+
+    //p6p13
+    UdpEchoServerHelper server15 (15);
+    ApplicationContainer apps15 = server15.Install (p.Get (6));
+    apps15.Start (Seconds (1.0));
+    apps15.Stop (Seconds (10.0));
+
+    UdpEchoClientHelper client15 (addressArray[6].GetAddress (0), 15);
+    client15.SetAttribute ("MaxPackets", UintegerValue (1));
+    client15.SetAttribute ("Interval", TimeValue (Seconds (1.0)));
+    client15.SetAttribute ("PacketSize", UintegerValue (1024));
+
+    apps15 = client15.Install (NodeContainer (p.Get (13)));
+    apps15.Start (Seconds (2.0));
+    apps15.Stop (Seconds (10.0));
+
+    //p8p12
+    UdpEchoServerHelper server16 (16);
+    ApplicationContainer apps16 = server16.Install (p.Get (8));
+    apps16.Start (Seconds (1.0));
+    apps16.Stop (Seconds (10.0));
+
+    UdpEchoClientHelper client16 (addressArray[8].GetAddress (0), 16);
+    client16.SetAttribute ("MaxPackets", UintegerValue (1));
+    client16.SetAttribute ("Interval", TimeValue (Seconds (1.0)));
+    client16.SetAttribute ("PacketSize", UintegerValue (1024));
+
+    apps16 = client16.Install (NodeContainer (p.Get (12)));
+    apps16.Start (Seconds (2.0));
+    apps16.Stop (Seconds (10.0));
+
+    //p9p10
+    UdpEchoServerHelper server17 (17);
+    ApplicationContainer apps17 = server17.Install (p.Get (9));
+    apps17.Start (Seconds (1.0));
+    apps17.Stop (Seconds (10.0));
+
+    UdpEchoClientHelper client17 (addressArray[9].GetAddress (0), 17);
+    client17.SetAttribute ("MaxPackets", UintegerValue (1));
+    client17.SetAttribute ("Interval", TimeValue (Seconds (1.0)));
+    client17.SetAttribute ("PacketSize", UintegerValue (1024));
+
+    apps17 = client17.Install (NodeContainer (p.Get (10)));
+    apps17.Start (Seconds (2.0));
+    apps17.Stop (Seconds (10.0));
+    
     
     //Runs the simulation
     Simulator::Stop (Seconds (10.0));

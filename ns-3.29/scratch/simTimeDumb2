@@ -1,0 +1,28 @@
+#include "ns3/core-module.h"
+#include "ns3/network-module.h"
+#include "ns3/internet-module.h"
+#include "ns3/point-to-point-module.h"
+#include "ns3/applications-module.h"
+
+using namespace ns3;
+using nam
+space std;
+
+NS_LOG_COMPONENT_DEFINE ("simTimeDumbVersion");
+ 
+int
+main (int argc, char *argv[]){
+
+    CommandLine cmd (__FILE__);
+   cmd.Parse (argc, argv);
+   
+   Time::SetResolution (Time::NS);
+   LogComponentEnable ("UdpEchoClientApplication", LOG_LEVEL_INFO);
+   LogComponentEnable ("UdpEchoServerApplication", LOG_LEVEL_INFO);
+ 
+   NodeContainer source;
+   source.Create (2);
+
+   NodeContainer source;
+   source.Create (2);
+}

@@ -1,0 +1,10 @@
+#include "ns3/adjmatrixmodule-module.h"
+
+using namespace ns3;
+using namespace std;
+
+int main(){
+    AdjMatrices matrixObject = new AdjMatrices("matchings.csv");
+    matrixObject->printMatchings();
+    cout << "this is in testmodule" << endl;
+}

@@ -1,6 +1,6 @@
-# project ns (3.29) configured on Wed Jan 27 00:27:11 2021 by
+# project ns (3.29) configured on Thu Apr 15 23:20:15 2021 by
 # waf 2.0.9 (abi 20, python 20711f0 on linux2)
-# using ./waf -d debug --enable-examples --enable-tests configure
+# using ./waf configure
 #
 ----------------------------------------
 Setting top to
@@ -724,18 +724,18 @@ Checking for compilation flag -Wl,--soname=foo support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_b18b9700c6d87987d57360f80419ee6d/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_7c8c55fe816cff87e6c2f853fcd48002/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-Wl,--soname=foo', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_b18b9700c6d87987d57360f80419ee6d/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-Wl,--soname=foo', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_7c8c55fe816cff87e6c2f853fcd48002/testbuild/test.cpp.1.o']
 ok
 ------------------------------------------------------
 Checking for compilation flag -std=c++11 support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_b18b9700c6d87987d57360f80419ee6d/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_7c8c55fe816cff87e6c2f853fcd48002/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_b18b9700c6d87987d57360f80419ee6d/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_7c8c55fe816cff87e6c2f853fcd48002/testbuild/test.cpp.1.o']
 ok
 ------------------------------------------------------
 Checking for program 'python'
@@ -775,8 +775,8 @@ out: '/usr'
 '/usr/include/python2.7'
 1
 ''
-'x86_64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-rrBAp6/python2.7-2.7.17=. -fstack-protector-strong -Wformat -Werror=format-security  '
-'-fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-rrBAp6/python2.7-2.7.17=. -fstack-protector-strong -Wformat -Werror=format-security  '
+'x86_64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-gnDdqE/python2.7-2.7.17=. -fstack-protector-strong -Wformat -Werror=format-security  '
+'-fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-gnDdqE/python2.7-2.7.17=. -fstack-protector-strong -Wformat -Werror=format-security  '
 ''
 
 '/usr'
@@ -787,8 +787,8 @@ out: '/usr'
 '/usr/include/python2.7'
 1
 ''
-'x86_64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-rrBAp6/python2.7-2.7.17=. -fstack-protector-strong -Wformat -Werror=format-security  '
-'-fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-rrBAp6/python2.7-2.7.17=. -fstack-protector-strong -Wformat -Werror=format-security  '
+'x86_64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-gnDdqE/python2.7-2.7.17=. -fstack-protector-strong -Wformat -Werror=format-security  '
+'-fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-gnDdqE/python2.7-2.7.17=. -fstack-protector-strong -Wformat -Werror=format-security  '
 ''
 
 Configuration returned from ['/usr/bin/python']:
@@ -800,90 +800,29 @@ LIBPL = '/usr/lib/python2.7/config-x86_64-linux-gnu'
 INCLUDEPY = '/usr/include/python2.7'
 Py_ENABLE_SHARED = 1
 MACOSX_DEPLOYMENT_TARGET = ''
-LDSHARED = 'x86_64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-rrBAp6/python2.7-2.7.17=. -fstack-protector-strong -Wformat -Werror=format-security  '
-CFLAGS = '-fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-rrBAp6/python2.7-2.7.17=. -fstack-protector-strong -Wformat -Werror=format-security  '
+LDSHARED = 'x86_64-linux-gnu-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-gnDdqE/python2.7-2.7.17=. -fstack-protector-strong -Wformat -Werror=format-security  '
+CFLAGS = '-fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-gnDdqE/python2.7-2.7.17=. -fstack-protector-strong -Wformat -Werror=format-security  '
 LDVERSION = ''
 
 ------------------------------------------------------
 python-config
-not found
-find program=['/usr/bin/python-config', 'python2.7-config', 'python-config-2.7', 'python2.7m-config'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='PYTHON_CONFIG' -> None
-from /home/opera-sim/ns-allinone-3.29/ns-3.29/bindings/python: Could not find the program ['/usr/bin/python-config', 'python2.7-config', 'python-config-2.7', 'python2.7m-config']
-Unhandled flag '-Wall'
-Unhandled flag '-Wstrict-prototypes'
-Unhandled flag '-Wdate-time'
-Unhandled flag '-Wformat'
-Unhandled flag '-Werror=format-security'
-Unhandled flag 'x86_64-linux-gnu-gcc'
-Unhandled flag '-shared'
-Unhandled flag '-Wall'
-Unhandled flag '-Wstrict-prototypes'
+/usr/bin/python-config
+find program=['/usr/bin/python-config', 'python2.7-config', 'python-config-2.7', 'python2.7m-config'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='PYTHON_CONFIG' -> ['/usr/bin/python-config']
+------------------------------------------------------------------
+Asking python-config for pyembed '--cflags --libs --ldflags' flags
+['/usr/bin/python-config', '--cflags', '--libs', '--ldflags']
+out: -I/usr/include/python2.7 -I/usr/include/x86_64-linux-gnu/python2.7  -fno-strict-aliasing -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-gnDdqE/python2.7-2.7.17=. -fstack-protector-strong -Wformat -Werror=format-security  -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes
+-lpython2.7 -lpthread -ldl  -lutil -lm 
+-L/usr/lib/python2.7/config-x86_64-linux-gnu -L/usr/lib -lpython2.7 -lpthread -ldl  -lutil -lm  -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions
+
 Unhandled flag '-Wdate-time'
 Unhandled flag '-Wformat'
 Unhandled flag '-Werror=format-security'
 Unhandled flag '-Wall'
 Unhandled flag '-Wstrict-prototypes'
-Unhandled flag '-Wdate-time'
-Unhandled flag '-Wformat'
-Unhandled flag '-Werror=format-security'
-
-
-# try again with -L$python_LIBDIR: ['/usr/lib']
-
-------------------------------------------------------
-Checking for library python2.7 in LIBDIR
-==>
-
-int main(int argc, char **argv) {
-	(void)argc; (void)argv;
-	return 0;
-}
-
-<==
-[1/2] Compiling [32mbuild/.conf_check_df507e365d6a1c28a8e0389869c577ba/test.cpp[0m
-
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fno-strict-aliasing', '-g', '-fwrapv', '-O2', '-g', '-fdebug-prefix-map=/build/python2.7-rrBAp6/python2.7-2.7.17=.', '-fstack-protector-strong', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DNDEBUG', '-D_FORTIFY_SOURCE=2', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_df507e365d6a1c28a8e0389869c577ba/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_df507e365d6a1c28a8e0389869c577ba/testbuild/testprog[0m
-
-['/usr/bin/g++', '-Wl,-Bsymbolic-functions', '-Wl,-z,relro', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_df507e365d6a1c28a8e0389869c577ba/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib', '-lpython2.7']
-err: /usr/bin/ld: cannot find -lpython2.7
-collect2: error: ld returned 1 exit status
-
-from /home/opera-sim/ns-allinone-3.29/ns-3.29/bindings/python: Test does not build: Traceback (most recent call last):
-  File "/home/opera-sim/ns-allinone-3.29/ns-3.29/.waf-2.0.9-897e824215d3dab2b64982d8af27db90/waflib/Configure.py", line 324, in run_build
-    bld.compile()
-  File "/home/opera-sim/ns-allinone-3.29/ns-3.29/.waf-2.0.9-897e824215d3dab2b64982d8af27db90/waflib/Build.py", line 176, in compile
-    raise Errors.BuildError(self.producer.error)
-BuildError: Build failed
- -> task in 'testprog' failed with exit status 1 (run with -v to display more information)
-
-not found
-from /home/opera-sim/ns-allinone-3.29/ns-3.29/bindings/python: The configuration failed
-
-
-# try again with -L$python_LIBPL (some systems don't install the python library in $prefix/lib)
-
-------------------------------------------------------
-Checking for library python2.7 in python_LIBPL
-==>
-
-int main(int argc, char **argv) {
-	(void)argc; (void)argv;
-	return 0;
-}
-
-<==
-[1/2] Compiling [32mbuild/.conf_check_62d80ed616af59e0dbdd5a031860db72/test.cpp[0m
-
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fno-strict-aliasing', '-g', '-fwrapv', '-O2', '-g', '-fdebug-prefix-map=/build/python2.7-rrBAp6/python2.7-2.7.17=.', '-fstack-protector-strong', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DNDEBUG', '-D_FORTIFY_SOURCE=2', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_62d80ed616af59e0dbdd5a031860db72/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_62d80ed616af59e0dbdd5a031860db72/testbuild/testprog[0m
-
-['/usr/bin/g++', '-Wl,-Bsymbolic-functions', '-Wl,-z,relro', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_62d80ed616af59e0dbdd5a031860db72/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib/python2.7/config-x86_64-linux-gnu', '-lpython2.7']
 yes
-Include path for Python extensions (found via distutils module): '/usr/include/python2.7'
-
-------------------------------------------------------
-Checking for header Python.h
+------------------------------------------------------------------
+Testing pyembed configuration
 ==>
 
 #include <Python.h>
@@ -904,13 +843,127 @@ int main(int argc, char **argv)
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_eeda509187173f66a4dccb45b8decf14/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_66bac720172496b404c7b40b02f5237f/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fno-strict-aliasing', '-g', '-fwrapv', '-O2', '-g', '-fdebug-prefix-map=/build/python2.7-rrBAp6/python2.7-2.7.17=.', '-fstack-protector-strong', '-fno-strict-aliasing', '-I/usr/include/python2.7', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DNDEBUG', '-D_FORTIFY_SOURCE=2', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_eeda509187173f66a4dccb45b8decf14/testbuild/test.cpp.1.o']
-err: ../test.cpp:2:10: fatal error: Python.h: No such file or directory
- #include <Python.h>
-          ^~~~~~~~~~
-compilation terminated.
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fno-strict-aliasing', '-g', '-fdebug-prefix-map=/build/python2.7-gnDdqE/python2.7-2.7.17=.', '-fstack-protector-strong', '-g', '-fwrapv', '-O2', '-I/usr/include/python2.7', '-I/usr/include/x86_64-linux-gnu/python2.7', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-D_FORTIFY_SOURCE=2', '-DNDEBUG', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_66bac720172496b404c7b40b02f5237f/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_66bac720172496b404c7b40b02f5237f/testbuild/testprog[0m
+
+['/usr/bin/g++', '-Xlinker', '-export-dynamic', '-Wl,-O1', '-Wl,-Bsymbolic-functions', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_66bac720172496b404c7b40b02f5237f/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib/python2.7/config-x86_64-linux-gnu', '-L/usr/lib', '-lpython2.7', '-lpthread', '-ldl', '-lutil', '-lm', '-lpython2.7', '-lpthread', '-ldl', '-lutil', '-lm']
+yes
+------------------------------------------------------------------
+Asking python-config for pyext '--cflags --libs --ldflags' flags
+['/usr/bin/python-config', '--cflags', '--libs', '--ldflags']
+out: -I/usr/include/python2.7 -I/usr/include/x86_64-linux-gnu/python2.7  -fno-strict-aliasing -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-gnDdqE/python2.7-2.7.17=. -fstack-protector-strong -Wformat -Werror=format-security  -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes
+-lpython2.7 -lpthread -ldl  -lutil -lm 
+-L/usr/lib/python2.7/config-x86_64-linux-gnu -L/usr/lib -lpython2.7 -lpthread -ldl  -lutil -lm  -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions
+
+Unhandled flag '-Wdate-time'
+Unhandled flag '-Wformat'
+Unhandled flag '-Werror=format-security'
+Unhandled flag '-Wall'
+Unhandled flag '-Wstrict-prototypes'
+yes
+------------------------------------------------------------------
+Testing pyext configuration
+==>
+
+#include <Python.h>
+#ifdef __cplusplus
+extern "C" {
+#endif
+	void Py_Initialize(void);
+	void Py_Finalize(void);
+#ifdef __cplusplus
+}
+#endif
+int main(int argc, char **argv)
+{
+   (void)argc; (void)argv;
+   Py_Initialize();
+   Py_Finalize();
+   return 0;
+}
+
+<==
+[1/2] Compiling [32mbuild/.conf_check_24e2e91427347718f5b8605ab4b918c3/test.cpp[0m
+
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fPIC', '-fno-strict-aliasing', '-g', '-fdebug-prefix-map=/build/python2.7-gnDdqE/python2.7-2.7.17=.', '-fstack-protector-strong', '-g', '-fwrapv', '-O2', '-I/usr/include/python2.7', '-I/usr/include/x86_64-linux-gnu/python2.7', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-D_FORTIFY_SOURCE=2', '-DNDEBUG', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_24e2e91427347718f5b8605ab4b918c3/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_24e2e91427347718f5b8605ab4b918c3/testbuild/testprog.so[0m
+
+['/usr/bin/g++', '-shared', '-Xlinker', '-export-dynamic', '-Wl,-O1', '-Wl,-Bsymbolic-functions', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_24e2e91427347718f5b8605ab4b918c3/testbuild/testprog.so', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib/python2.7/config-x86_64-linux-gnu', '-L/usr/lib', '-lpython2.7', '-lpthread', '-ldl', '-lutil', '-lm', '-lpython2.7', '-lpthread', '-ldl', '-lutil', '-lm']
+yes
+------------------------------------------------------------------
+Checking for compilation flag -fvisibility=hidden support
+==>
+int main() { return 0; }
+<==
+[1/1] Compiling [32mbuild/.conf_check_7c8c55fe816cff87e6c2f853fcd48002/test.cpp[0m
+
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fvisibility=hidden', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_7c8c55fe816cff87e6c2f853fcd48002/testbuild/test.cpp.1.o']
+ok
+------------------------------------------------------------------
+Checking for compilation flag -Wno-array-bounds support
+==>
+int main() { return 0; }
+<==
+[1/1] Compiling [32mbuild/.conf_check_7c8c55fe816cff87e6c2f853fcd48002/test.cpp[0m
+
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-array-bounds', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_7c8c55fe816cff87e6c2f853fcd48002/testbuild/test.cpp.1.o']
+ok
+------------------------------------------------------------------
+Checking for pybindgen location
+../pybindgen-0.17.0.post58+ngcf00cc0 (guessed)
+------------------------------------------------------------------
+Checking for python module 'pybindgen'
+['/usr/bin/python', '-c', "\nimport pybindgen as current_module\nversion = getattr(current_module, '__version__', None)\nif version is not None:\n\tprint(str(version))\nelse:\n\tprint('unknown version')\n"]
+out: 0.17.0.post58+gcf00cc0
+
+0.17.0.post58+gcf00cc0
+------------------------------------------------------------------
+Checking for pybindgen version
+0.17.0.post58+gcf00cc0
+------------------------------------------------------------------
+Checking for code snippet
+==>
+
+#include <stdint.h>
+#include <vector>
+
+int main ()
+{
+   std::vector< uint64_t > t = std::vector< unsigned long > ();
+   return 0;
+}
+
+<==
+[1/1] Compiling [32mbuild/.conf_check_03328bf7d410c796e1996bb7f6c5febf/test.cpp[0m
+
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_03328bf7d410c796e1996bb7f6c5febf/testbuild/test.cpp.1.o']
+yes
+------------------------------------------------------------------
+Checking for types uint64_t and unsigned long equivalence
+no
+------------------------------------------------------------------
+Checking for code snippet
+==>
+
+#include <stdint.h>
+#include <vector>
+
+int main ()
+{
+   std::vector< uint64_t > t = std::vector< unsigned long long > ();
+   return 0;
+}
+
+<==
+[1/1] Compiling [32mbuild/.conf_check_76769fe108df894df751471544d0c47e/test.cpp[0m
+
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_76769fe108df894df751471544d0c47e/testbuild/test.cpp.1.o']
+err: ../test.cpp: In function ‘int main()’:
+../test.cpp:7:37: error: conversion from ‘std::vector<long long unsigned int>’ to non-scalar type ‘std::vector<long unsigned int>’ requested
+    std::vector< uint64_t > t = std::vector< unsigned long long > ();
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 from /home/opera-sim/ns-allinone-3.29/ns-3.29/bindings/python: Test does not build: Traceback (most recent call last):
   File "/home/opera-sim/ns-allinone-3.29/ns-3.29/.waf-2.0.9-897e824215d3dab2b64982d8af27db90/waflib/Configure.py", line 324, in run_build
@@ -920,30 +973,78 @@ from /home/opera-sim/ns-allinone-3.29/ns-3.29/bindings/python: Test does not bui
 BuildError: Build failed
  -> task in 'testprog' failed with exit status 1 (run with -v to display more information)
 
-Distutils not installed? Broken python installation? Get python-config now!
+no
 from /home/opera-sim/ns-allinone-3.29/ns-3.29/bindings/python: The configuration failed
-------------------------------------------------------
+------------------------------------------------------------------
+Checking for types uint64_t and unsigned long long equivalence
+yes
+------------------------------------------------------------------
+Checking for the apidefs that can be used for Python bindings
+gcc-LP64
+------------------------------------------------------------------
+Checking for internal GCC cxxabi
+==>
+
+# include <cxxabi.h>
+int main ()
+{
+   const abi::__si_class_type_info *_typeinfo  __attribute__((unused)) = NULL;
+   return 0;
+}
+
+<==
+[1/2] Compiling [32mbuild/.conf_check_99ec5cd3a79c9740dff649d63d5f3610/test.cpp[0m
+
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_99ec5cd3a79c9740dff649d63d5f3610/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_99ec5cd3a79c9740dff649d63d5f3610/testbuild/testprog[0m
+
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_99ec5cd3a79c9740dff649d63d5f3610/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+complete
+------------------------------------------------------------------
+Checking for python module 'pygccxml'
+['/usr/bin/python', '-c', "\nimport pygccxml as current_module\nversion = getattr(current_module, '__version__', None)\nif version is not None:\n\tprint(str(version))\nelse:\n\tprint('unknown version')\n"]
+err: Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+ImportError: No module named pygccxml
+
+not found
+from /home/opera-sim/ns-allinone-3.29/ns-3.29/bindings/python: Could not find the python module 'pygccxml'
+------------------------------------------------------------------
 Checking boost includes
 headers not found, please provide a --boost-includes argument (see help)
 from /home/opera-sim/ns-allinone-3.29/ns-3.29/src: The configuration failed
-------------------------------------------------------
+------------------------------------------------------------------
 Checking boost includes
 headers not found, please provide a --boost-includes argument (see help)
 from /home/opera-sim/ns-allinone-3.29/ns-3.29/src: The configuration failed
-------------------------------------------------------
+------------------------------------------------------------------
 Checking for click location
 not found
-------------------------------------------------------
+------------------------------------------------------------------
 Checking for program 'pkg-config'
+/usr/bin/pkg-config
+find program=['pkg-config'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='PKGCONFIG' -> ['/usr/bin/pkg-config']
+------------------------------------------------------------------
+Checking for 'gtk+-3.0'
+['/usr/bin/pkg-config', '--cflags', '--libs', 'gtk+-3.0']
+err: Package gtk+-3.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `gtk+-3.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'gtk+-3.0' found
+
 not found
-find program=['pkg-config'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='PKGCONFIG' -> None
-from /home/opera-sim/ns-allinone-3.29/ns-3.29/src/config-store: Could not find the program ['pkg-config']
-------------------------------------------------------
-Checking for program 'pkg-config'
+from /home/opera-sim/ns-allinone-3.29/ns-3.29/src/config-store: The configuration failed
+------------------------------------------------------------------
+Checking for 'libxml-2.0'
+['/usr/bin/pkg-config', '--cflags', '--libs', 'libxml-2.0']
+err: Package libxml-2.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libxml-2.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libxml-2.0' found
+
 not found
-find program=['pkg-config'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='PKGCONFIG' -> None
-from /home/opera-sim/ns-allinone-3.29/ns-3.29/src/config-store: Could not find the program ['pkg-config']
-------------------------------------------------------
+from /home/opera-sim/ns-allinone-3.29/ns-3.29/src/config-store: The configuration failed
+------------------------------------------------------------------
 checking for uint128_t
 ==>
 
@@ -957,9 +1058,9 @@ checking for uint128_t
         }
         
 <==
-[1/2] Compiling [32mbuild/.conf_check_d400fb9b1716652a37a16b41cd657e14/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_4bb26345c5cabbf4ea81f9ef378fbb80/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_d400fb9b1716652a37a16b41cd657e14/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_4bb26345c5cabbf4ea81f9ef378fbb80/testbuild/test.cpp.1.o']
 err: ../test.cpp: In function ‘int main(int, char**)’:
 ../test.cpp:6:7: error: ‘uint128_t’ was not declared in this scope
   if ((uint128_t *) 0) return 0;
@@ -992,7 +1093,7 @@ BuildError: Build failed
 
 not found
 from /home/opera-sim/ns-allinone-3.29/ns-3.29/src/core: The configuration failed
-------------------------------------------------------
+------------------------------------------------------------------
 checking for __uint128_t
 ==>
 
@@ -1006,17 +1107,17 @@ checking for __uint128_t
         }
         
 <==
-[1/2] Compiling [32mbuild/.conf_check_91d44d622f5f884985f944c6ff4cc29c/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_f7dcfdec0474b6a20f9ce6ace30946db/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_91d44d622f5f884985f944c6ff4cc29c/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_91d44d622f5f884985f944c6ff4cc29c/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_f7dcfdec0474b6a20f9ce6ace30946db/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_f7dcfdec0474b6a20f9ce6ace30946db/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_91d44d622f5f884985f944c6ff4cc29c/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_f7dcfdec0474b6a20f9ce6ace30946db/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
-------------------------------------------------------
+------------------------------------------------------------------
 Checking high precision implementation
 128-bit integer (default)
-------------------------------------------------------
+------------------------------------------------------------------
 Checking for header stdint.h
 ==>
 #include <stdint.h>
@@ -1027,14 +1128,14 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_0cdf426dd3434913ef7b88e975a6ae25/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_dd10073916b239debd1163a9f1910fe8/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_0cdf426dd3434913ef7b88e975a6ae25/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_0cdf426dd3434913ef7b88e975a6ae25/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_dd10073916b239debd1163a9f1910fe8/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_dd10073916b239debd1163a9f1910fe8/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_0cdf426dd3434913ef7b88e975a6ae25/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_dd10073916b239debd1163a9f1910fe8/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
-------------------------------------------------------
+------------------------------------------------------------------
 Checking for header inttypes.h
 ==>
 #include <inttypes.h>
@@ -1045,14 +1146,14 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_03f6b9d173623237fa41f4500b05e0e3/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_70261b12d962501e1bcdfad93f022726/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_03f6b9d173623237fa41f4500b05e0e3/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_03f6b9d173623237fa41f4500b05e0e3/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_70261b12d962501e1bcdfad93f022726/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_70261b12d962501e1bcdfad93f022726/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_03f6b9d173623237fa41f4500b05e0e3/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_70261b12d962501e1bcdfad93f022726/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
-------------------------------------------------------
+------------------------------------------------------------------
 Checking for header sys/inttypes.h
 ==>
 #include <sys/inttypes.h>
@@ -1063,9 +1164,9 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_deb00da88474ff5eb75c680d23124040/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_4aec2e33fdb0e322c54a62d053b1eb37/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_deb00da88474ff5eb75c680d23124040/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_4aec2e33fdb0e322c54a62d053b1eb37/testbuild/test.cpp.1.o']
 err: ../test.cpp:1:10: fatal error: sys/inttypes.h: No such file or directory
  #include <sys/inttypes.h>
           ^~~~~~~~~~~~~~~~
@@ -1081,7 +1182,7 @@ BuildError: Build failed
 
 not found
 from /home/opera-sim/ns-allinone-3.29/ns-3.29/src/core: The configuration failed
-------------------------------------------------------
+------------------------------------------------------------------
 Checking for header sys/types.h
 ==>
 #include <sys/types.h>
@@ -1092,14 +1193,14 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_66e062c643956ed63c018645f7ec564f/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_7f5a87a514fcc95bcf9e597041e6b313/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_66e062c643956ed63c018645f7ec564f/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_66e062c643956ed63c018645f7ec564f/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_7f5a87a514fcc95bcf9e597041e6b313/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_7f5a87a514fcc95bcf9e597041e6b313/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_66e062c643956ed63c018645f7ec564f/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_7f5a87a514fcc95bcf9e597041e6b313/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
-------------------------------------------------------
+------------------------------------------------------------------
 Checking for header sys/stat.h
 ==>
 #include <sys/stat.h>
@@ -1110,14 +1211,14 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_795780e39b69f3432317ca7c30bb474d/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_c569d700636ba41a7619f5602d4667de/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_795780e39b69f3432317ca7c30bb474d/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_795780e39b69f3432317ca7c30bb474d/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_c569d700636ba41a7619f5602d4667de/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_c569d700636ba41a7619f5602d4667de/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_795780e39b69f3432317ca7c30bb474d/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_c569d700636ba41a7619f5602d4667de/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
-------------------------------------------------------
+------------------------------------------------------------------
 Checking for header dirent.h
 ==>
 #include <dirent.h>
@@ -1128,14 +1229,14 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_0e5699d7fe762bdb8568b64a0fdcc3e4/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_a080dc2fd422bdabc9e5cb16dde9cf22/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_0e5699d7fe762bdb8568b64a0fdcc3e4/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_0e5699d7fe762bdb8568b64a0fdcc3e4/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_a080dc2fd422bdabc9e5cb16dde9cf22/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_a080dc2fd422bdabc9e5cb16dde9cf22/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_0e5699d7fe762bdb8568b64a0fdcc3e4/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_a080dc2fd422bdabc9e5cb16dde9cf22/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
-------------------------------------------------------
+------------------------------------------------------------------
 Checking for header stdlib.h
 ==>
 #include <stdlib.h>
@@ -1146,14 +1247,14 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_7187c4f4d0db18a6f531bed985af1b86/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_c10a2e6b93ad14a702e7aa0631cad351/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_7187c4f4d0db18a6f531bed985af1b86/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_7187c4f4d0db18a6f531bed985af1b86/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_c10a2e6b93ad14a702e7aa0631cad351/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_c10a2e6b93ad14a702e7aa0631cad351/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_7187c4f4d0db18a6f531bed985af1b86/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_c10a2e6b93ad14a702e7aa0631cad351/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
-------------------------------------------------------
+------------------------------------------------------------------
 Checking for header signal.h
 ==>
 #include <signal.h>
@@ -1164,14 +1265,14 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_378eaed1e0456df5a257816927eea68c/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_11ddbad1028f13d46151d39471070fd5/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_378eaed1e0456df5a257816927eea68c/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_378eaed1e0456df5a257816927eea68c/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_11ddbad1028f13d46151d39471070fd5/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_11ddbad1028f13d46151d39471070fd5/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_378eaed1e0456df5a257816927eea68c/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_11ddbad1028f13d46151d39471070fd5/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
-------------------------------------------------------
+------------------------------------------------------------------
 Checking for header pthread.h
 ==>
 
@@ -1184,14 +1285,14 @@ int main ()
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_824baea42226a5f41931377158600a43/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_7f58169636f3a190340c160796c4d014/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_824baea42226a5f41931377158600a43/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_824baea42226a5f41931377158600a43/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_7f58169636f3a190340c160796c4d014/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_7f58169636f3a190340c160796c4d014/testbuild/testprog[0m
 
-['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_824baea42226a5f41931377158600a43/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_7f58169636f3a190340c160796c4d014/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
-------------------------------------------------------
+------------------------------------------------------------------
 Checking for header stdint.h
 ==>
 #include <stdint.h>
@@ -1202,14 +1303,14 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_0cdf426dd3434913ef7b88e975a6ae25/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_dd10073916b239debd1163a9f1910fe8/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_0cdf426dd3434913ef7b88e975a6ae25/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_0cdf426dd3434913ef7b88e975a6ae25/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_dd10073916b239debd1163a9f1910fe8/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_dd10073916b239debd1163a9f1910fe8/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_0cdf426dd3434913ef7b88e975a6ae25/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_dd10073916b239debd1163a9f1910fe8/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
-------------------------------------------------------
+------------------------------------------------------------------
 Checking for header inttypes.h
 ==>
 #include <inttypes.h>
@@ -1220,14 +1321,14 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_03f6b9d173623237fa41f4500b05e0e3/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_70261b12d962501e1bcdfad93f022726/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_03f6b9d173623237fa41f4500b05e0e3/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_03f6b9d173623237fa41f4500b05e0e3/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_70261b12d962501e1bcdfad93f022726/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_70261b12d962501e1bcdfad93f022726/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_03f6b9d173623237fa41f4500b05e0e3/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_70261b12d962501e1bcdfad93f022726/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
-------------------------------------------------------
+------------------------------------------------------------------
 Checking for header sys/inttypes.h
 ==>
 #include <sys/inttypes.h>
@@ -1238,9 +1339,9 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_deb00da88474ff5eb75c680d23124040/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_4aec2e33fdb0e322c54a62d053b1eb37/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_deb00da88474ff5eb75c680d23124040/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_4aec2e33fdb0e322c54a62d053b1eb37/testbuild/test.cpp.1.o']
 err: ../test.cpp:1:10: fatal error: sys/inttypes.h: No such file or directory
  #include <sys/inttypes.h>
           ^~~~~~~~~~~~~~~~
@@ -1256,7 +1357,7 @@ BuildError: Build failed
 
 not found
 from /home/opera-sim/ns-allinone-3.29/ns-3.29/src/core: The configuration failed
-------------------------------------------------------
+------------------------------------------------------------------
 Checking for library rt
 ==>
 
@@ -1266,14 +1367,14 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_96e64d41ec0701d0c24020b0f61f9166/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_2cd7c4eb975abbc627065e3a597b83a3/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_96e64d41ec0701d0c24020b0f61f9166/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_96e64d41ec0701d0c24020b0f61f9166/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_2cd7c4eb975abbc627065e3a597b83a3/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_2cd7c4eb975abbc627065e3a597b83a3/testbuild/testprog[0m
 
-['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_96e64d41ec0701d0c24020b0f61f9166/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lrt']
+['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_2cd7c4eb975abbc627065e3a597b83a3/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lrt']
 yes
-------------------------------------------------------
+------------------------------------------------------------------
 Checking for header sys/ioctl.h
 ==>
 #include <sys/ioctl.h>
@@ -1284,14 +1385,14 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_4af67d3afc9fdf6cefd6029e9154588c/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_a4fb80bcaa682f1ec189d38ae39f2546/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_4af67d3afc9fdf6cefd6029e9154588c/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_4af67d3afc9fdf6cefd6029e9154588c/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_a4fb80bcaa682f1ec189d38ae39f2546/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_a4fb80bcaa682f1ec189d38ae39f2546/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_4af67d3afc9fdf6cefd6029e9154588c/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_a4fb80bcaa682f1ec189d38ae39f2546/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
-------------------------------------------------------
+------------------------------------------------------------------
 Checking for header net/if.h
 ==>
 #include <net/if.h>
@@ -1302,14 +1403,14 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_78e37eae2e74173df53b37a5fef1d618/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_cb144b351e6a067acad94557cdcdf8fd/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_78e37eae2e74173df53b37a5fef1d618/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_78e37eae2e74173df53b37a5fef1d618/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_cb144b351e6a067acad94557cdcdf8fd/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_cb144b351e6a067acad94557cdcdf8fd/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_78e37eae2e74173df53b37a5fef1d618/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_cb144b351e6a067acad94557cdcdf8fd/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
-------------------------------------------------------
+------------------------------------------------------------------
 Checking for header net/ethernet.h
 ==>
 #include <net/ethernet.h>
@@ -1320,14 +1421,14 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_75d3fa20e3a68053179da127c8bdc356/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_b5a6cd22c6e1a4cdf936b7aaefaa989c/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_75d3fa20e3a68053179da127c8bdc356/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_75d3fa20e3a68053179da127c8bdc356/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_b5a6cd22c6e1a4cdf936b7aaefaa989c/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_b5a6cd22c6e1a4cdf936b7aaefaa989c/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_75d3fa20e3a68053179da127c8bdc356/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_b5a6cd22c6e1a4cdf936b7aaefaa989c/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
-------------------------------------------------------
+------------------------------------------------------------------
 Checking for header linux/if_tun.h
 ==>
 #include <linux/if_tun.h>
@@ -1338,14 +1439,14 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_ec970de9e62757a88d469a354c67c3a4/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_71d323d388bea1622cc18b8cf209b51e/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_ec970de9e62757a88d469a354c67c3a4/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_ec970de9e62757a88d469a354c67c3a4/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_71d323d388bea1622cc18b8cf209b51e/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_71d323d388bea1622cc18b8cf209b51e/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_ec970de9e62757a88d469a354c67c3a4/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_71d323d388bea1622cc18b8cf209b51e/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
-------------------------------------------------------
+------------------------------------------------------------------
 Checking for header netpacket/packet.h
 ==>
 #include <netpacket/packet.h>
@@ -1356,22 +1457,27 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_dc431319694a7a678c2b92d1690c2ca3/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_85a485f137554df2276708d45dabe945/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_dc431319694a7a678c2b92d1690c2ca3/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_dc431319694a7a678c2b92d1690c2ca3/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_85a485f137554df2276708d45dabe945/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_85a485f137554df2276708d45dabe945/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_dc431319694a7a678c2b92d1690c2ca3/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_85a485f137554df2276708d45dabe945/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
-------------------------------------------------------
+------------------------------------------------------------------
 Checking for NSC location
 not found
-------------------------------------------------------
-Checking for program 'pkg-config'
+------------------------------------------------------------------
+Checking for 'sqlite3'
+['/usr/bin/pkg-config', '--cflags', '--libs', 'sqlite3']
+err: Package sqlite3 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `sqlite3.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'sqlite3' found
+
 not found
-find program=['pkg-config'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='PKGCONFIG' -> None
-from /home/opera-sim/ns-allinone-3.29/ns-3.29/src/stats: Could not find the program ['pkg-config']
-------------------------------------------------------
+from /home/opera-sim/ns-allinone-3.29/ns-3.29/src/stats: The configuration failed
+------------------------------------------------------------------
 Checking for header linux/if_tun.h
 ==>
 #include <linux/if_tun.h>
@@ -1382,69 +1488,130 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_ec970de9e62757a88d469a354c67c3a4/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_71d323d388bea1622cc18b8cf209b51e/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_ec970de9e62757a88d469a354c67c3a4/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_ec970de9e62757a88d469a354c67c3a4/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_71d323d388bea1622cc18b8cf209b51e/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_71d323d388bea1622cc18b8cf209b51e/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_ec970de9e62757a88d469a354c67c3a4/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_71d323d388bea1622cc18b8cf209b51e/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
-------------------------------------------------------
+------------------------------------------------------------------
+Checking for python module 'gi'
+['/usr/bin/python', '-c', "\nimport gi as current_module\nversion = getattr(current_module, '__version__', None)\nif version is not None:\n\tprint(str(version))\nelse:\n\tprint('unknown version')\n"]
+out: 3.26.1
+
+3.26.1
+------------------------------------------------------------------
+Checking for python module 'gi.repository.GObject'
+['/usr/bin/python', '-c', "\nimport gi.repository.GObject as current_module\nversion = getattr(current_module, '__version__', None)\nif version is not None:\n\tprint(str(version))\nelse:\n\tprint('unknown version')\n"]
+out: unknown version
+
+ok
+------------------------------------------------------------------
+Checking for python module 'cairo'
+['/usr/bin/python', '-c', "\nimport cairo as current_module\nversion = getattr(current_module, '__version__', None)\nif version is not None:\n\tprint(str(version))\nelse:\n\tprint('unknown version')\n"]
+out: unknown version
+
+ok
+------------------------------------------------------------------
+Checking for python module 'pygraphviz'
+['/usr/bin/python', '-c', "\nimport pygraphviz as current_module\nversion = getattr(current_module, '__version__', None)\nif version is not None:\n\tprint(str(version))\nelse:\n\tprint('unknown version')\n"]
+out: 1.4rc1
+
+1.4rc1
+------------------------------------------------------------------
+Checking for python module 'gi.repository.Gtk'
+['/usr/bin/python', '-c', "\nimport gi.repository.Gtk as current_module\nversion = getattr(current_module, '__version__', None)\nif version is not None:\n\tprint(str(version))\nelse:\n\tprint('unknown version')\n"]
+out: unknown version
+
+err: -c:2: PyGIWarning: Gtk was imported without specifying a version first. Use gi.require_version('Gtk', '3.0') before import to ensure that the right version gets loaded.
+
+ok
+------------------------------------------------------------------
+Checking for python module 'gi.repository.Gdk'
+['/usr/bin/python', '-c', "\nimport gi.repository.Gdk as current_module\nversion = getattr(current_module, '__version__', None)\nif version is not None:\n\tprint(str(version))\nelse:\n\tprint('unknown version')\n"]
+out: unknown version
+
+err: -c:2: PyGIWarning: Gdk was imported without specifying a version first. Use gi.require_version('Gdk', '3.0') before import to ensure that the right version gets loaded.
+
+ok
+------------------------------------------------------------------
+Checking for python module 'gi.repository.Pango'
+['/usr/bin/python', '-c', "\nimport gi.repository.Pango as current_module\nversion = getattr(current_module, '__version__', None)\nif version is not None:\n\tprint(str(version))\nelse:\n\tprint('unknown version')\n"]
+out: unknown version
+
+err: -c:2: PyGIWarning: Pango was imported without specifying a version first. Use gi.require_version('Pango', '1.0') before import to ensure that the right version gets loaded.
+
+ok
+------------------------------------------------------------------
+Checking for python module 'gi.repository.GooCanvas'
+['/usr/bin/python', '-c', "\nimport gi.repository.GooCanvas as current_module\nversion = getattr(current_module, '__version__', None)\nif version is not None:\n\tprint(str(version))\nelse:\n\tprint('unknown version')\n"]
+out: unknown version
+
+err: -c:2: PyGIWarning: GooCanvas was imported without specifying a version first. Use gi.require_version('GooCanvas', '2.0') before import to ensure that the right version gets loaded.
+
+ok
+------------------------------------------------------------------
 Checking for program 'sudo'
 /usr/bin/sudo
 find program=['sudo'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='SUDO' -> ['/usr/bin/sudo']
-------------------------------------------------------
+------------------------------------------------------------------
 Checking for program 'valgrind'
 not found
 find program=['valgrind'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='VALGRIND' -> None
 from /home/opera-sim/ns-allinone-3.29/ns-3.29: Could not find the program ['valgrind']
-------------------------------------------------------
-Checking for program 'pkg-config'
+------------------------------------------------------------------
+Checking for 'gsl'
+['/usr/bin/pkg-config', '--cflags', '--libs', 'gsl']
+err: Package gsl was not found in the pkg-config search path.
+Perhaps you should add the directory containing `gsl.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'gsl' found
+
 not found
-find program=['pkg-config'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='PKGCONFIG' -> None
-from /home/opera-sim/ns-allinone-3.29/ns-3.29: Could not find the program ['pkg-config']
-------------------------------------------------------
+from /home/opera-sim/ns-allinone-3.29/ns-3.29: The configuration failed
+------------------------------------------------------------------
 python-config
 not found
 find program=['libgcrypt-config'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='LIBGCRYPT_CONFIG' -> None
 from /home/opera-sim/ns-allinone-3.29/ns-3.29: Could not find the program ['libgcrypt-config']
--------------------------------------------------------
+------------------------------------------------------------------
 Checking for compilation flag -fstrict-aliasing support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_b18b9700c6d87987d57360f80419ee6d/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_7c8c55fe816cff87e6c2f853fcd48002/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_b18b9700c6d87987d57360f80419ee6d/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_7c8c55fe816cff87e6c2f853fcd48002/testbuild/test.cpp.1.o']
 ok
--------------------------------------------------------
+------------------------------------------------------------------
 Checking for compilation flag -fstrict-aliasing support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_b56b3c023f39c4c0c2d5c67c38031969/test.c[0m
+[1/1] Compiling [32mbuild/.conf_check_379e76628631c06c91c5b40446a3921d/test.c[0m
 
-['/usr/bin/gcc', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_b56b3c023f39c4c0c2d5c67c38031969/testbuild/test.c.1.o']
+['/usr/bin/gcc', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_379e76628631c06c91c5b40446a3921d/testbuild/test.c.1.o']
 ok
--------------------------------------------------------
+------------------------------------------------------------------
 Checking for compilation flag -Wstrict-aliasing support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_b18b9700c6d87987d57360f80419ee6d/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_7c8c55fe816cff87e6c2f853fcd48002/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fstrict-aliasing', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_b18b9700c6d87987d57360f80419ee6d/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fstrict-aliasing', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_7c8c55fe816cff87e6c2f853fcd48002/testbuild/test.cpp.1.o']
 ok
--------------------------------------------------------
+------------------------------------------------------------------
 Checking for compilation flag -Wstrict-aliasing support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_b56b3c023f39c4c0c2d5c67c38031969/test.c[0m
+[1/1] Compiling [32mbuild/.conf_check_379e76628631c06c91c5b40446a3921d/test.c[0m
 
-['/usr/bin/gcc', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_b56b3c023f39c4c0c2d5c67c38031969/testbuild/test.c.1.o']
+['/usr/bin/gcc', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o/home/opera-sim/ns-allinone-3.29/ns-3.29/build/.conf_check_379e76628631c06c91c5b40446a3921d/testbuild/test.c.1.o']
 ok
--------------------------------------------------------
+------------------------------------------------------------------
 Checking for program 'doxygen'
 not found
 find program=['doxygen'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='DOXYGEN' -> None

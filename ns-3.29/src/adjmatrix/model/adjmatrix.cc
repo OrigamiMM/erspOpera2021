@@ -6,18 +6,14 @@
 
 namespace ns3 {
 
+    /**
+    Splits a string using a defined character or characters.
+    @param line the string input
+    @param delimiter the chosen string to use as split point 
+    @return a vector of split strings
+    */
     vector<string> splitString (string line, string delimiter){
         vector<string> toReturn;
-        // size_t pos = 0;
-        // string token;
-        // cout << line << endl;
-        // while ((pos = line.find(delimiter)) != string::npos) { 
-        //     token = line.substr(0, pos);
-        //     cout << "Printing current token: " << token << "! lets go." <<endl;
-        //     toReturn.push_back(token);
-        //     line.erase(0, pos + delimiter.length());
-        // }
-        //[1]
         auto start = 0U;
         auto end = line.find(delimiter);
         while (end != string::npos)
@@ -31,11 +27,13 @@ namespace ns3 {
         
         return toReturn;
     }
-    //[1]moswald, stackoverflow, 2021
-
 
     //calls the splitString method and gets node count from the pairs. 
     //In the csv, matchings are(should) be one to one, so we have 
+    /**
+    From line with matrix data, gets the estimated size of the resulting matrix
+    @param line the matrix pairings
+    */
     void AdjMatrices::getMatrixSize(string line){
         //{"0 7", "1 8", "2 9", "3 10", "4 11", "5 6"}
         size = splitString(line, ",").size();
@@ -65,10 +63,10 @@ namespace ns3 {
         printf("Default Constructor\n");
     }
 
-
-
-    //Takes in a line of csv file and a size
-    //calls the splitString method
+    /**
+    Creates a matrix from matrix data in string. Saves it in the data structure as a variable
+    @param matrix string data
+    */
     void AdjMatrices::createMatrix(string line){
         vector<vector<int>> matrix (size, vector<int>(size, 0));
         vector<string> matchings;
@@ -87,6 +85,13 @@ namespace ns3 {
         matchesArray.push_back(matrix);
     }
 
+    /**
+    Checks if two ports are connected at given time
+    @param input matrix matching
+    @param source port
+    @param destination port
+    @return true if connection exist 
+    */
     bool AdjMatrices::existing_connection(vector<vector<int>> adjMat, int source, int destination){
         if(source < 0 || source >= size || destination < size || destination >= 2*size){
             cout << "Error Out of Bounds" << endl;
@@ -95,7 +100,10 @@ namespace ns3 {
         return adjMat[source][destination - size] == 1;
     }
 
-    //Checks if a graph is one-to-one. Checks for typos in csv file
+     /**
+    Checks if matix is valid/ is one-to-one
+    @return true if graph is one-to-one 
+    */
     bool AdjMatrices::injectiveCheck(){
         vector<vector<int>> matchingToCheck;
         int sCount = 0;
@@ -134,7 +142,9 @@ namespace ns3 {
     }
 
 
-
+     /**
+    Prints the expected index at the current simulator time when called
+    */
     void AdjMatrices::next_matching_index(){
         currentMatchingIndex = (Simulator::Now().GetNanoSeconds() / rotationTime) % matchesArray.size();
         
@@ -147,13 +157,22 @@ namespace ns3 {
         }
     }
 
+    /**
+    Returns the matching matrix at a given time in nanoseconds
+    @param uint64_t time in nanoseconds
+    @return vector<vector<int>> of the matrix 
+    */
     vector<vector<int>> AdjMatrices::getMatchingIndex(uint64_t nanoseconds){
         int index = (nanoseconds / rotationTime) % matchesArray.size();
         currentMatchingIndex = index;
         return matchesArray[index];
     }
 
-
+    /**
+    Checks if the matrix at given time matches the expected matrix
+    @param uint64_t time in nanoseconds
+    @return true if correct matrix is set 
+    */
     bool AdjMatrices::correctMatchingTimeCheck(int64_t targetTime){
         //Matching changes every 3500 nanoseconds.
         //Matching 0: 0-3499        0-2.999     9-11.9999
@@ -179,6 +198,9 @@ namespace ns3 {
    
     }
 
+    /**
+    Prints the matchings for current matrix array
+    */
     void AdjMatrices::printCurrentMatching(){
         //auto m = matchesArray[currentMatchingIndex];
 
@@ -193,11 +215,9 @@ namespace ns3 {
         }
     }
 
-    // 0 2, 1 3
-    //   0(2)     1(3)
-    //0   1       0
-    //1   0       1
-
+    /**
+    Prints matchings for all matching matrices
+    */
     void AdjMatrices::printAllMatchings(){
         int matchIndex = 0;
         for(auto m : matchesArray){
@@ -213,14 +233,22 @@ namespace ns3 {
         }
     }
 
+    /**
+    Returns the rotation time set in the constructor
+    @return uint64_t time in nanoseconds
+    */
     int AdjMatrices::getRotationTime(){
         return rotationTime;
     }
-
+    
+    /**
+    Returns the current index
+    @return int index of data structure
+    */
     int AdjMatrices::getCurrentIndex(){
         return currentMatchingIndex;
     }
-
+    
     vector<vector<vector<int>>> AdjMatrices::getMatchesArray(){
         return matchesArray;
     }

@@ -17,6 +17,7 @@ using namespace ns3;
 
 NS_LOG_COMPONENT_DEFINE("OperaSim");
 
+//Returns AdjRouter router. 
 Ptr<Ipv4AdjRouting> GetAdjRouter(Ptr<Node> node)
 {
   Ptr<Ipv4> ipv4 = node->GetObject<Ipv4>();
@@ -26,6 +27,7 @@ Ptr<Ipv4AdjRouting> GetAdjRouter(Ptr<Node> node)
   return router;
 }
 
+//
 void CreateAndAggregateObjectFromTypeId(Ptr<Node> node, const std::string typeId)
 {
   ObjectFactory factory;
@@ -87,6 +89,7 @@ void CreateAndAggregateObjectFromTypeId(Ptr<Node> node, const std::string typeId
 
 } */
 
+//Method that connects our adjRouting module to the OperaSimTest code. 
 static void AddInternetStack(Ptr<Node> node)
 {
   ObjectFactory m_tcpFactory;
@@ -96,10 +99,12 @@ static void AddInternetStack(Ptr<Node> node)
   Ipv4GlobalRoutingHelper globalRouting;
   Ipv4AdjRoutingHelper adjRouting;
   Ipv4ListRoutingHelper listRouting;
+
   //The entire point of this routine is to add this call
+  //Makes the adjRouting protocol have the highest priortiy
   listRouting.Add(adjRouting, 1);
 
-  //Change complete
+  //Lowers the priority of the other routing protocols
   listRouting.Add(staticRouting, 0);
   listRouting.Add(globalRouting, -10);
   m_routing = listRouting.Copy();
@@ -116,6 +121,7 @@ static void AddInternetStack(Ptr<Node> node)
   //NS_ASSERT (arp);
   //arp->SetAttribute ("RequestJitter", StringValue ("ns3::ConstantRandomVariable[Constant=0.0]"));
   // Set routing
+
   Ptr<Ipv4> ipv4 = node->GetObject<Ipv4>();
   Ptr<Ipv4RoutingProtocol> ipv4Routing = m_routing->Create(node);
   ipv4->SetRoutingProtocol(ipv4Routing);
@@ -131,6 +137,7 @@ static void AddInternetStack(Ptr<Node> node)
   //arp->SetTrafficControl(tc);
 }
 
+//Start of the simulation code
 int main(int argc, char *argv[]){
     
     // PYVIZ code
@@ -150,15 +157,9 @@ int main(int argc, char *argv[]){
 
     // container of 4 general nodes
     NodeContainer nodes;
-    nodes.Create(4);
-
+    nodes.Create(4);   
+    
     // server 1 to client 1 and client 2
-    /*NodeContainer ser1toclients[2];
-    ser1toclients[0] = NodeContainer(nodes.Get(0), nodes.Get(2));
-    ser1toclients[0] = NodeContainer(nodes.Get(0), nodes.Get(2));
-    ser1toclients[1] = NodeContainer(nodes.Get(0), nodes.Get(3)); */
-    
-    
     NodeContainer ser1toclients[2];
     ser1toclients[0] = NodeContainer(nodes.Get(0), nodes.Get(2));
     ser1toclients[1] = NodeContainer(nodes.Get(0), nodes.Get(3));
@@ -174,6 +175,7 @@ int main(int argc, char *argv[]){
     //InternetStackHelper internet;
     //internet.Install(nodes);
 
+    //iterator that adds the internet stack to each of the nodes. 
     NodeContainer::Iterator i;
     for (i = nodes.Begin(); i != nodes.End(); ++i)
     {
@@ -186,19 +188,15 @@ int main(int argc, char *argv[]){
     AddInternetStack(nodes.Get(2));
     AddInternetStack(nodes.Get(3));*/
 
-    
+    //Point to point helper.
     PointToPointHelper pointToPoint;
     pointToPoint.SetDeviceAttribute("DataRate", StringValue ("5Mbps"));
     pointToPoint.SetChannelAttribute("Delay", StringValue ("2ms"));
 
-    
+    //Layer that installs the pointToPoint on each connection.
     NetDeviceContainer layer1[2];
     layer1[0] = pointToPoint.Install(ser1toclients[0]); //p2p 0-2
     layer1[1] = pointToPoint.Install(ser1toclients[1]); //p2p 0-3
-    // int index = 0;
-    // for(auto connection: ser1toclients){
-    //     layer1[index++] = pointToPoint.Install(connection);
-    // }
 
     NetDeviceContainer layer2[2];
     layer2[0] = pointToPoint.Install(ser2toclients[0]); //p2p 1-2
@@ -255,7 +253,6 @@ int main(int argc, char *argv[]){
 
     //everything after here is okay
 
-    //Will replace with our global routing 
     Ipv4GlobalRoutingHelper::PopulateRoutingTables();
 
     //receiver 1
